@@ -1,7 +1,7 @@
-print("Система расчёта штрафов d Германии")
+print("Система расчёта штрафов в Германии")
 
 car_speed = 51
-is_town = False
+is_town = True
 
 
 fine_for_town_1_to_10 = 30
@@ -46,19 +46,35 @@ elif over_speed >= 11 and over_speed <= 15 and is_town: # 11 - 15
   print("Штраф: " + str(fine_for_town_11_to_15) + " Евро") 
 elif over_speed >= 11 and over_speed <= 15:
   print("Штраф: " + str(fine_for_country_11_to_15) + " Евро") 
-elif over_speed >= 16 and over_speed <=20 and is_town: # 16 - 20
+elif over_speed >= 16 and over_speed <= 20 and is_town: # 16 - 20
   print("Штраф: " + str(fine_for_town_16_to_20) + " Евро") 
-elif over_speed >= 16 and over_speed <=20:
-  print("Штраф: " + str(fine_for_country_16_to_20))
-elif over_speed >= 21 and over_speed <=25 and is_town: # 21 - 25
-  print("Штраф: " + str(fine_for_town_21_to_25))
-elif over_speed >= 21 and over_speed <=25:
-  print("Штраф: " + str(fine_for_country_21_to_25))
-elif over_speed >= 26 and over_speed <=30 and is_town: # 26 - 30
-  print("Штраф: " + str(fine_for_town_26_to_30))
+elif over_speed >= 16 and over_speed <= 20:
+  print("Штраф: " + str(fine_for_country_16_to_20) + " Евро")
+elif over_speed >= 21 and over_speed <= 25 and is_town: # 21 - 25
+  print("Штраф: " + str(fine_for_town_21_to_25) + " Евро")
+elif over_speed >= 21 and over_speed <= 25:
+  print("Штраф: " + str(fine_for_country_21_to_25) + " Евро")
+elif over_speed >= 26 and over_speed <= 30 and is_town: # 26 - 30
+  print("Штраф: " + str(fine_for_town_26_to_30) + " Евро")
 elif over_speed >= 26 and over_speed <= 30:
-  print("Штраф: " + str(fine_for_country_26_to_30))
-elif over_speed >= 31 and over_speed <=40 and is_town: # 31 - 40
-  print("Штраф: " + str(fine_for_town_31_to_40))
-elif over_speed >= 31 and over_speed <=40:
-  print("Штраф: " + str(fine_for_country_31_to_40))
+  print("Штраф: " + str(fine_for_country_26_to_30) + " Евро")
+elif over_speed >= 31 and over_speed <= 40 and is_town: # 31 - 40
+  print("Штраф: " + str(fine_for_town_31_to_40) + " Евро")
+elif over_speed >= 31 and over_speed <= 40:
+  print("Штраф: " + str(fine_for_country_31_to_40) + " Евро")
+elif over_speed >= 41 and over_speed <= 50 and is_town: # 41 - 50
+  print("Штраф " + str(fine_for_town_41_to_50) + " Евро") 
+elif over_speed >= 41 and over_speed <= 50:
+  print("Штраф: " + str(fine_for_country_41_to_50) + " Евро")
+elif over_speed >= 51 and over_speed <= 60 and is_town: # 51 - 60
+  print("Штраф: " + str(fine_for_town_51_to_60) + " Евро")
+elif over_speed >= 51 and over_speed <= 60:
+  print("Штраф: " + str(fine_for_country_51_to_60) + " Евро")
+elif over_speed >= 61 and over_speed < 70 and is_town: # 61 - 70
+  print("Штраф: " + str(fine_for_town_61_to_70) + " Евро")
+elif over_speed >= 61 and over_speed < 70:
+  print("Штраф: " + str(fine_for_country_61_to_70) + " Евро")
+elif over_speed > 70 and is_town: # 70 and more
+  print("Штраф: " + str(fine_for_town_70_and_more) + " Евро")
+elif over_speed > 70:
+  print("Штраф: " + str(fine_for_country_70_and_more) + " Евро")
