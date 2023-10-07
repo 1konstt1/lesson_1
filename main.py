@@ -1,7 +1,7 @@
 print("Система расчёта штрафов в Германии")
 
-car_speed = 51
-is_town = True
+car_speed = 150
+is_town = False
 
 
 fine_for_town_1_to_10 = 30
@@ -70,9 +70,9 @@ elif over_speed >= 51 and over_speed <= 60 and is_town: # 51 - 60
   print("Штраф: " + str(fine_for_town_51_to_60) + " Евро")
 elif over_speed >= 51 and over_speed <= 60:
   print("Штраф: " + str(fine_for_country_51_to_60) + " Евро")
-elif over_speed >= 61 and over_speed < 70 and is_town: # 61 - 70
+elif over_speed >= 61 and over_speed <= 70 and is_town: # 61 - 70
   print("Штраф: " + str(fine_for_town_61_to_70) + " Евро")
-elif over_speed >= 61 and over_speed < 70:
+elif over_speed >= 61 and over_speed <= 70:
   print("Штраф: " + str(fine_for_country_61_to_70) + " Евро")
 elif over_speed > 70 and is_town: # 70 and more
   print("Штраф: " + str(fine_for_town_70_and_more) + " Евро")
